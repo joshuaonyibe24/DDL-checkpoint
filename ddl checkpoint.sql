@@ -2,7 +2,15 @@ create table  product (
 	product_id varchar(20)constraint pkey1 primary key,
 	 product_name varchar(20),
 	 price int
-)
+);
+
+create table  customer( 
+	customer_id varchar(20)constraint pkey1 primary key,
+	 customer_name varchar(20),
+	 customer_tel
+);
+
+
 
 create table orders( 
 	customer_id varchar(20),
