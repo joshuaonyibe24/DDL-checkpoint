@@ -7,7 +7,9 @@ create table  product (
 create table  customer( 
 	customer_id varchar(20)constraint pkey1 primary key,
 	 customer_name varchar(20),
-	 customer_tel int
+	 customer_tel int,
+	dob date
+	
 );
 
 
