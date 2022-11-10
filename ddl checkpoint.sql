@@ -8,7 +8,7 @@ create table  customer(
 	customer_id varchar(20)constraint pkey1 primary key,
 	 customer_name varchar(20),
 	 customer_tel int,
-	dob date
+	
 	
 );
 
@@ -19,6 +19,7 @@ create table orders(
 	product_id varchar(20),
 	amount int,
 	quantity int,
+	dob date,
 	constraint skey1 FOREIGN KEY (customer_id)references customer(customer_id),
 	constraint skey2 FOREIGN KEY (product_id)references product(product_id)
 	
