@@ -1,7 +1,7 @@
 create table  product ( 
 	product_id varchar(20)constraint pkey1 primary key,
-	 product_name varchar(20),
-	 price int 
+	 product_name varchar(20) not null,
+	 price int check (price > 0)
 );
 
 create table  customer( 
